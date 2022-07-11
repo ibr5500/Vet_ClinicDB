@@ -1,7 +1,8 @@
-# curriculum-databases-projects-template
+# Vet clinic database: create animals table
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+## In this project I have: 
+> - Use a relational database to create the initial data structure for a vet clinic. 
+> - Create a table to store animals' information, insert some data into it, and query it.
 
 
 ## Getting Started
