@@ -66,3 +66,12 @@ UPDATE animals SET species = 'unspecified';
 SELECT * FROM animals;
 ROLLBACK;
 SELECT * from animals;
+
+/* COMMIT */
+
+BEGIN;
+UPDATE animals SET species = 'digimon' WHERE name like '%mon';
+UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
+COMMIT;
+SELECT * FROM animals;
+
