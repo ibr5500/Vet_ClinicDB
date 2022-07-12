@@ -57,3 +57,12 @@ select * from animals where weight_kg between 10.4 and 17.3;
 ----+---------+---------------+-----------------+----------+-----------
 --  3 | Pikavhu | 2021-01-07    |               1 | f        |     15.04
 --  4 | Devimon | 2017-05-12    |               5 | t        |        11
+
+
+/* ROLLBACK */
+
+BEGIN;
+UPDATE animals SET species = 'unspecified';
+SELECT * FROM animals;
+ROLLBACK;
+SELECT * from animals;
