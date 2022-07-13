@@ -101,3 +101,13 @@ SELECT avg(weight_kg) FROM animals;
 SELECT neutered, max(escape_attempts) FROM animals GROUP BY neutered;
 SELECT species, min(weight_kg), max(weight_kg) FROM animals GROUP BY species;
 SELECT species, avg(escape_attempts) FROM animals WHERE date_of_birth BETWEEN '1900-JAN-01' AND '2001-JAN-01' GROUP BY species;
+
+/* project 3 */
+-- Update species Id based on the last three letters
+
+UPDATE animals SET species_id = 2 WHERE name like '%mon';
+
+-- Update the null species Id
+
+UPDATE animals SET species_id = 1 WHERE name not like '%mon';
+
