@@ -33,4 +33,32 @@ insert into species (name)
 values ('Pokemon'),
 ('Digimon');
 
+-- Update species Id based on the last three letters
 
+UPDATE animals SET species_id = 2 WHERE name like '%mon';
+
+-- Update the null species Id
+
+UPDATE animals SET species_id = 1 WHERE name not like '%mon';
+
+-- Updathe owner_id in the animals table based on the owners id (owners table)
+
+UPDATE animals SET owner_id = (
+  SELECT id from owners WHERE full_name = 'Sam Smith'
+) WHERE name like 'Agumon';
+
+UPDATE animals SET owner_id = (
+  SELECT id from owners WHERE full_name = 'Jennifer Orwell'
+) WHERE name like 'Gabumon' or name like 'Pikachu';
+
+UPDATE animals SET owner_id = (
+  SELECT id from owners WHERE full_name = 'Bob'
+) WHERE name like 'Devimon' or name like 'Plantmon';
+
+UPDATE animals SET owner_id = (
+  SELECT id from owners WHERE full_name = 'Melody Pond'
+) WHERE name like 'Charmander' or name like 'Blossom' or name like 'Squirtle';
+
+UPDATE animals SET owner_id = (
+  SELECT id from owners WHERE full_name = 'Dean Winchester'
+) WHERE name like 'Angemon' or name like 'Boarmon';
