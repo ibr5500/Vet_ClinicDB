@@ -27,3 +27,10 @@ values ('Sam Smith', 34),
 ('Dean Winchester', 14),
 ('Jodie Whittaker', 38);
 
+-- Adding data to species table
+
+insert into species (name)
+values ('Pokemon'),
+('Digimon');
+
+
