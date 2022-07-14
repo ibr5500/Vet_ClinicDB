@@ -62,3 +62,62 @@ UPDATE animals SET owner_id = (
 UPDATE animals SET owner_id = (
   SELECT id from owners WHERE full_name = 'Dean Winchester'
 ) WHERE name like 'Angemon' or name like 'Boarmon';
+
+/* Project 4 */
+
+-- Insert data to vets table
+insert into vets (name, age, date_of_graduation)
+values ('William Tatcher', 45, '2000-APR-23'),
+('Maisy Smith', 26, '2019-JAN-17'),
+('Stephanie Mendez', 64, '1981-MAY-04'),
+('Jack Harkness', 38, '2008-JUN-08');
+
+-- insert data to the specializations table
+
+insert into specializations (species_id, vet_id)
+VALUES (
+  (
+    SELECT id FROM species
+    WHERE name like 'Pokemon'
+  ),
+  (
+    SELECT id FROM vets
+    WHERE name = 'William Tatcher'
+  )
+);
+
+insert into specializations (species_id, vet_id)
+VALUES (
+  (
+    SELECT id FROM species
+    WHERE name like 'Pokemon'
+  ),
+  (
+    SELECT id FROM vets
+    WHERE name = 'Stephanie Mendez'
+  )
+);
+
+insert into specializations (species_id, vet_id)
+VALUES (
+  (
+    SELECT id FROM species
+    WHERE name like 'Pokemon'
+  ),
+  (
+    SELECT id FROM vets
+    WHERE name = 'Stephanie Mendez'
+  )
+);
+
+insert into specializations (species_id, vet_id)
+VALUES (
+  (
+    SELECT id FROM species
+    WHERE name like 'Digimon'
+  ),
+  (
+    SELECT id FROM vets
+    WHERE name = 'Jack Harkness'
+  )
+);
