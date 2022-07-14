@@ -10,8 +10,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 
 ### ScreenShots:
-<img src='./screenshots/rollback1.png'/>
-<img src='./screenshots/rollback2.png'/>
+<img src='./screenshots/Melody.png'/>
+<img src='./screenshots/Pokemon.png'/>
 <img src='./screenshots/COMMIT.png'/>
 <img src='./screenshots/delete_all.png'/>
 <img src='./screenshots/savepoint.png'/>
