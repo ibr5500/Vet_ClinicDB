@@ -1,4 +1,4 @@
-# Vet clinic database: query and update animals table.
+# Vet clinic database: query multiple tables
 
 ## Getting Started
 
@@ -12,11 +12,11 @@ This repository includes files with plain SQL that can be used to recreate a dat
 ### ScreenShots:
 <img src='./screenshots/Melody.png'/>
 <img src='./screenshots/Pokemon.png'/>
-<img src='./screenshots/COMMIT.png'/>
-<img src='./screenshots/delete_all.png'/>
-<img src='./screenshots/savepoint.png'/>
-<img src='./screenshots/answers1.png'/>
-<img src='./screenshots/answers1.png'/>
+<img src='./screenshots/anim_owners.png'/>
+<img src='./screenshots/CountByTypes.png'/>
+<img src='./screenshots/Jennifer.png'/>
+<img src='./screenshots/Dean.png'/>
+<img src='./screenshots/mostOwner.png'/>
 
 ## Author
 
