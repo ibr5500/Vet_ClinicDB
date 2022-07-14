@@ -101,7 +101,7 @@ insert into specializations (species_id, vet_id)
 VALUES (
   (
     SELECT id FROM species
-    WHERE name like 'Pokemon'
+    WHERE name like 'Digimon'
   ),
   (
     SELECT id FROM vets
