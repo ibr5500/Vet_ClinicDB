@@ -73,7 +73,6 @@ values ('William Tatcher', 45, '2000-APR-23'),
 ('Jack Harkness', 38, '2008-JUN-08');
 
 -- insert data to the specializations table
-
 insert into specializations (species_id, vet_id)
 VALUES (
   (
@@ -121,3 +120,188 @@ VALUES (
     WHERE name = 'Jack Harkness'
   )
 );
+
+-- Insert data to the visits table
+INSERT into visits (animals_id, vet_id, date_of_visit)
+VALUES (
+  (
+    SELECT id FROM animals WHERE name like 'Agumon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'William Tatcher'
+  ),
+  ('2020-MAY-24')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Agumon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Stephanie Mendez'
+  ),
+  ('2020-JUL-22')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Gabumon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Jack Harkness'
+  ),
+  ('2021-FEB-02')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Pikachu'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Maisy Smith'
+  ),
+  ('2020-JAN-05')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Pikachu'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Maisy Smith'
+  ),
+  ('2020-MAR-08')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Pikachu'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Maisy Smith'
+  ),
+  ('2020-MAY-14')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Devimon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Stephanie Mendez'
+  ),
+  ('2021-MAY-04')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Charmander'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Jack Harkness'
+  ),
+  ('2021-FEB-24')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Plantmon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Maisy Smith'
+  ),
+  ('2019-DEC-21')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Plantmon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'William Tatcher'
+  ),
+  ('2020-AUG-10')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Plantmon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Maisy Smith'
+  ),
+  ('2021-APR-07')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Squirtle'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Stephanie Mendez'
+  ),
+  ('2019-SEP-29')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Angemon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Jack Harkness'
+  ),
+  ('2020-OCT-03')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Angemon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Jack Harkness'
+  ),
+  ('2020-NOV-04')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Boarmon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Maisy Smith'
+  ),
+  ('2019-JAN-24')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Boarmon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Maisy Smith'
+  ),
+  ('2019-MAY-15')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Boarmon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Maisy Smith'
+  ),
+  ('2020-FEB-27')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Boarmon'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Maisy Smith'
+  ),
+  ('2020-AUG-03')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Blossom'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'Stephanie Mendez'
+  ),
+  ('2020-MAY-24')
+),
+(
+  (
+    SELECT id FROM animals WHERE name like 'Blossom'
+  ), 
+  (
+    SELECT id FROM vets WHERE name like 'William Tatcher'
+  ),
+  ('2021-JAN-11')
+);
+
+
