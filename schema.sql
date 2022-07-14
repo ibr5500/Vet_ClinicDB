@@ -38,4 +38,12 @@ ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES species(id) ON DELET
 ALTER TABLE animals ADD owner_id INT;
 ALTER TABLE animals ADD FOREIGN KEY (owner_id) REFERENCES owners(id) ON DELETE CASCADE;
 
+/* Project 4 */
 
+-- Create vets table.
+CREATE TABLE vets (
+    id int GENERATED ALWAYS AS IDENTITY,
+    name varchar(100),
+    age int,
+    date_of_graduation date
+);
