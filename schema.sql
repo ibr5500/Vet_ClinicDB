@@ -38,4 +38,37 @@ ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES species(id) ON DELET
 ALTER TABLE animals ADD owner_id INT;
 ALTER TABLE animals ADD FOREIGN KEY (owner_id) REFERENCES owners(id) ON DELETE CASCADE;
 
+/* Project 4 */
+
+-- Create vets table.
+CREATE TABLE vets (
+    id int GENERATED ALWAYS AS IDENTITY,
+    name varchar(100),
+    age int,
+    date_of_graduation date
+);
+
+-- Create specializations table
+
+CREATE TABLE specializations (
+    id int GENERATED ALWAYS AS IDENTITY,
+    species_id int NOT NULL,
+    vet_id int NOT null,
+    FOREIGN KEY (species_id) 
+        REFERENCES species(id) ON DELETE CASCADE, 
+    FOREIGN KEY (vet_id) 
+        REFERENCES vets(id) ON DELETE CASCADE
+);
+
+-- Create visits table
+CREATE TABLE visits (
+    id int GENERATED ALWAYS AS IDENTITY,
+    animals_id int NOT NULL,
+    vet_id int NOT null,
+    date_of_visit date,
+    FOREIGN KEY (animals_id)
+        REFERENCES animals(id) ON DELETE CASCADE,
+    FOREIGN KEY (vet_id)
+        REFERENCES vets(id) ON DELETE CASCADE
+);
 

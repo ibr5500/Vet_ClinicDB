@@ -1,4 +1,4 @@
-# Vet clinic database: query multiple tables
+# Vet clinic database: add "join table" for visits
 
 ## Getting Started
 
@@ -10,13 +10,15 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 
 ### ScreenShots:
-<img src='./screenshots/Melody.png'/>
-<img src='./screenshots/Pokemon.png'/>
-<img src='./screenshots/anim_owners.png'/>
-<img src='./screenshots/CountByTypes.png'/>
-<img src='./screenshots/Jennifer.png'/>
-<img src='./screenshots/Dean.png'/>
-<img src='./screenshots/mostOwner.png'/>
+<img src='./screenshots/last_visit.png'/>
+<img src='./screenshots/diff_animals.png'/>
+<img src='./screenshots/vets_list.png'/>
+<img src='./screenshots/Mendez.png'/>
+<img src='./screenshots/mostVisit.png'/>
+<img src='./screenshots/Maisy.png'/>
+<img src='./screenshots/recent_visited.png'/>
+<img src='./screenshots/not_specialize.png'/>
+<img src='./screenshots/Maisy_spicilaze.png'/>
 
 ## Author
 
