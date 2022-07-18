@@ -1,4 +1,4 @@
-# Vet clinic database: add "join table" for visits
+# Vet clinic database: database performance audit
 
 ## Getting Started
 
@@ -10,17 +10,25 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 
 ### ScreenShots:
-<img src='./screenshots/last_visit.png'/>
-<img src='./screenshots/diff_animals.png'/>
-<img src='./screenshots/vets_list.png'/>
-<img src='./screenshots/Mendez.png'/>
-<img src='./screenshots/mostVisit.png'/>
-<img src='./screenshots/Maisy.png'/>
-<img src='./screenshots/recent_visited.png'/>
-<img src='./screenshots/not_specialize.png'/>
-<img src='./screenshots/Maisy_spicilaze.png'/>
+#### EXPLAIN ANALYZE for the visits table (animals_id).
+<img src='./screenshots/p4-screen1.png'/>
+<img src='./screenshots/p4-screen5.png'/>
 
-## Author
+#### EXPLAIN ANALYZE for the visits table (vet_id).
+<img src='./screenshots/p4-screen2.png'/>
+<img src='./screenshots/p4-screen4.png'/>
+
+#### EXPLAIN ANALYZE for the owners table.
+<img src='./screenshots/p4-screen3.png'/>
+<img src='./screenshots/p4-screen6.png'/>
+
+## Authors
+
+👤 **Olivier Gasominali**
+
+- GitHub: [@GOlivierNation](https://github.com/GOlivierNation)
+- Twitter: [@OGasominali](https://twitter.com/OGasominali)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/oliviergasominali/)
 
 👤 **Ibrahim Ahmat**
 
