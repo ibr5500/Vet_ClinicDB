@@ -22,11 +22,18 @@ ALTER TABLE animals DROP COLUMN species;
 
 -- Create species table
 
-CREATE TABLE species (id int GENERATED ALWAYS AS IDENTITY, name VARCHAR(50));
+CREATE TABLE species (
+    id int GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(50)
+);
 
 -- Create owners table
 
-CREATE TABLE owners (id int GENERATED ALWAYS AS IDENTITY, full_name VARCHAR(100), age int);
+CREATE TABLE owners (
+    id int GENERATED ALWAYS AS IDENTITY,
+    full_name VARCHAR(100),
+    age int
+);
 
 -- Add column species_id which is a foreign key referencing species table
 
@@ -71,4 +78,5 @@ CREATE TABLE visits (
     FOREIGN KEY (vet_id)
         REFERENCES vets(id) ON DELETE CASCADE
 );
+
 
