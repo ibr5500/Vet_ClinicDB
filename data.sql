@@ -325,7 +325,7 @@ INSERT INTO visits (
     '4 hours'
   ) 
   visit_timestamp;
-=======
+  
 -- This will add 2.500.000 owners with full_name = 'Owner <X>' and email = 'owner_<X>@email.com' (~2min approx.)
 INSERT INTO owners (full_name, email) SELECT 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
->>>>>>> 4d5b9a1a01025882b31793b8182b2cec31751aa6
+
