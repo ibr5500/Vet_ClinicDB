@@ -22,11 +22,18 @@ ALTER TABLE animals DROP COLUMN species;
 
 -- Create species table
 
-CREATE TABLE species (id int GENERATED ALWAYS AS IDENTITY, name VARCHAR(50));
+CREATE TABLE species (
+    id int GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(50)
+);
 
 -- Create owners table
 
-CREATE TABLE owners (id int GENERATED ALWAYS AS IDENTITY, full_name VARCHAR(100), age int);
+CREATE TABLE owners (
+    id int GENERATED ALWAYS AS IDENTITY,
+    full_name VARCHAR(100),
+    age int
+);
 
 -- Add column species_id which is a foreign key referencing species table
 
@@ -72,3 +79,13 @@ CREATE TABLE visits (
         REFERENCES vets(id) ON DELETE CASCADE
 );
 
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- Create Indexs:
+
+create INDEX animals_id_asc ON visits (animals_id ASC);
+
+create INDEX vet_id_asc ON visits (vet_id ASC);
+
+create INDEX email_asc ON owners (email ASC);

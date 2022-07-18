@@ -203,3 +203,13 @@ LEFT JOIN species on animals.species_id = species.id
 WHERE vets.name like 'Maisy Smith'
 GROUP BY species.name, vets.name
 ORDER BY count DESC LIMIT 1;
+
+/* Project 5 */
+
+-- Use EXPLAIN ANALYZE on the previous queries to check what is happening.
+explain analyze SELECT COUNT(*) FROM visits where animals_id = 4;
+
+explain analyze SELECT * FROM visits where vet_id = 2;
+
+explain analyze SELECT * FROM owners where email = 'owner_18327@mail.com';
+

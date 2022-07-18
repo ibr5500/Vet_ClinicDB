@@ -1,4 +1,4 @@
-# Vet clinic database: add "join table" for visits
+# Vet clinic database: database performance audit
 
 ## Getting Started
 
@@ -9,18 +9,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 
-### ScreenShots:
-<img src='./screenshots/last_visit.png'/>
-<img src='./screenshots/diff_animals.png'/>
-<img src='./screenshots/vets_list.png'/>
-<img src='./screenshots/Mendez.png'/>
-<img src='./screenshots/mostVisit.png'/>
-<img src='./screenshots/Maisy.png'/>
-<img src='./screenshots/recent_visited.png'/>
-<img src='./screenshots/not_specialize.png'/>
-<img src='./screenshots/Maisy_spicilaze.png'/>
+## Authors
 
-## Author
+👤 **Olivier Gasominali**
+
+- GitHub: [@GOlivierNation](https://github.com/GOlivierNation)
+- Twitter: [@OGasominali](https://twitter.com/OGasominali)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/oliviergasominali/)
 
 👤 **Ibrahim Ahmat**
 
