@@ -9,19 +9,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 
-### ScreenShots:
-#### EXPLAIN ANALYZE for the visits table (animals_id).
-<img src='./screenshots/p4-screen1.png'/>
-<img src='./screenshots/p4-screen5.png'/>
-
-#### EXPLAIN ANALYZE for the visits table (vet_id).
-<img src='./screenshots/p4-screen2.png'/>
-<img src='./screenshots/p4-screen4.png'/>
-
-#### EXPLAIN ANALYZE for the owners table.
-<img src='./screenshots/p4-screen3.png'/>
-<img src='./screenshots/p4-screen6.png'/>
-
 ## Authors
 
 👤 **Olivier Gasominali**
